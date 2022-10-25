@@ -7,9 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
         "dev": "tsnd --exit-child src/server.ts",
-        "start": "node build/index.js",
+        "start": "node public/index.js",
         "postinstall": "tsc",
-        "watch-node": "nodemon build/index.js",
+        "watch-node": "nodemon public/index.js",
         "watch-ts": "tsc -w",
         "deploy": "git add . && git commit -m Heroku && git push heroku master"
     },
